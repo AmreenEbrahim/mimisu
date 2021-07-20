@@ -11,15 +11,15 @@ const images = [
 		src: "../../img/home/slider/jurassic.jpg"
 	},
 	{
-		name: "image1",
+		name: "image2",
 		src: "../../img/home/slider/axis.png"
 	},
 	{
-		name: "image1",
+		name: "image3",
 		src: "../../img/home/slider/guilder.png"
 	},
 	{
-		name: "image1",
+		name: "image4",
 		src: "../../img/home/slider/shootfighter.png"
 	}
 ];

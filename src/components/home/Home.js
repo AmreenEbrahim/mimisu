@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { HomeIntro } from "./HomeIntro";
 import WhyUs from "./WhyUs";
 import Work from "./Work";
+import { Container } from "semantic-ui-react";
 
 const Home = () => {
 	return (
-		<div>
+		<Fragment>
 			<HomeIntro />
 			<WhyUs />>
 			<Work />
-		</div>
+		</Fragment>
 	);
 };
 

@@ -1,15 +1,21 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Input, Menu, Image } from "semantic-ui-react";
+import MenuModal from "../layouts/MenuModal.js";
+import { Input, Menu, Image, Button } from "semantic-ui-react";
 
 export default class MenuExampleSecondary extends Component {
-	state = { activeItem: "home" };
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			modalOpen: false,
+			valueIntoModal: "123456abcdef"
+		};
+	}
 
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
 	render() {
-		const { activeItem } = this.state;
-
 		return (
 			<Menu secondary>
 				<Menu.Item>
@@ -17,32 +23,39 @@ export default class MenuExampleSecondary extends Component {
 						<Image size="mini" src={"../../img/logo/Final_M.png"} />
 					</Link>
 				</Menu.Item>
-				{/* <Menu.Item
-					name="home"
-					active={activeItem === "home"}
-					onClick={this.handleItemClick}
-				/>
-				<Menu.Item
-					name="messages"
-					active={activeItem === "messages"}
-					onClick={this.handleItemClick}
-				/>
-				<Menu.Item
-					name="friends"
-					active={activeItem === "friends"}
-					onClick={this.handleItemClick}
-				/> */}
+
 				<Menu.Menu position="right">
-					<Link to="/menu">
+					<Button
+						basic
+						onClick={() => {
+							this.setState({ modalOpen: true });
+						}}
+					>
 						<Image size="mini" src={"../../img/logo/menu.png"} />
-					</Link>
-					{/* <Menu.Item
-						name="logout"
-						active={activeItem === "logout"}
-						onClick={this.handleItemClick}
-					/> */}
+					</Button>
+					<MenuModal // The invisible modal itself
+						key="modal1"
+						modalOpen={this.state.modalOpen}
+						handleClose={() => {
+							this.setState({ modalOpen: false });
+						}}
+						valueIntoModal={this.state.valueIntoModal}
+					/>
+
+					{/* <Link to="/menu">
+						
+					</Link> */}
 				</Menu.Menu>
 			</Menu>
 		);
 	}
 }
+// {
+// 	color: #fff;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 2000;
+//     mix-blend-mode: difference;
+// }
