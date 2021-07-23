@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Image, Container } from "semantic-ui-react";
+import WhatIDid from "../layouts/WhatIDid";
 
 const SpinningImages = () => {
 	return (
@@ -31,26 +32,26 @@ const SpinningImages = () => {
 						<Container>
 							<video
 								className="video-container video-container-overlay"
-								width="500"
-								height="300"
-								controls
+								width="450"
+								height="350"
 								autoPlay
 								loop
 								muted
 							>
 								<source
-									src="../../img/Spinning-Records/video.mp4"
+									src="../../img/Spinning-Records/spinning.mp4"
 									type="video/mp4"
 								/>
 							</video>
 						</Container>
 					</Grid.Column>
-					<Grid.Column Row="4" textAlign="right" verticalAlign="middle">
+					<WhatIDid textAlign="center" verticalAlign="middle" />
+					{/* <Grid.Column Row="4" textAlign="center" verticalAlign="middle">
 						<Grid.Row>What i did </Grid.Row>
 						<Grid.Row>UI design UX </Grid.Row>
 						<Grid.Row>Design</Grid.Row>
 						<Grid.Row>Visual design</Grid.Row>
-					</Grid.Column>
+					</Grid.Column> */}
 				</Grid.Row>
 
 				{/* {images.map(image => (

@@ -8,11 +8,15 @@
 	margin: 0;
 	padding: 0;
 }
-
+element.style {
+	display: none !important;
+}
 body {
-	font-size: 1rem;
-
-	background-color: white;
+	font-family: "Poppins", serif !important;
+	/* font-family: "Raleway", sans-serif; */
+	/* font-size: 1rem; */
+	line-height: 1.6;
+	background-color: #fff;
 	color: #333;
 }
 .flex-container {
@@ -33,6 +37,26 @@ body {
 .App {
 	text-align: center;
 }
+.home-menu {
+	position: absolute;
+	width: 86px;
+	height: 120px;
+	left: 1866px;
+	top: 497px;
+
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 119px;
+	/* identical to box height, or 478% */
+
+	letter-spacing: 0.19em;
+
+	color: #ffffff;
+
+	transform: rotate(90deg);
+}
 .ui.basic.button,
 .ui.basic.buttons .button {
 	background: transparent none !important;
@@ -45,12 +69,10 @@ body {
 }
 /* moving-background */
 .contact-background {
-	background-color: #7d4d73 !important;
+	background-color: #fff;
 	width: 100%;
-	height: 100%;
-	color: #fff;
-	position: relative;
-
+	height: 100vh;
+	color: #0000;
 	background-image: linear-gradient(
 		90deg,
 		#7d4d73 0.3%,
@@ -58,6 +80,91 @@ body {
 	);
 	background-size: 400% 400%;
 	animation: gradient 15s infinite;
+}
+span {
+	position: absolute;
+	width: 433px;
+	height: 59px;
+	left: 223px;
+	top: 644px;
+
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 181.5%;
+	/* or 34px */
+
+	letter-spacing: 0.18em;
+
+	color: #e1e1e1;
+}
+.contact-add {
+	position: absolute;
+	width: 322px;
+	height: 75px;
+	left: 223px;
+	top: 735px;
+
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 171.19%;
+	/* or 27px */
+
+	letter-spacing: 0.09em;
+
+	color: #ffff;
+}
+.contact-social {
+	position: absolute;
+	width: 155px;
+	height: 17px;
+	left: 223px;
+	top: 810px;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 140.69%;
+
+	letter-spacing: 0.09em;
+
+	color: #ffffff;
+}
+.contact-p {
+	position: absolute;
+	width: 459px;
+	height: 188px;
+	left: 223px;
+	top: 389px;
+
+	font-family: "Prata";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 146.3%;
+	/* or 94px */
+
+	letter-spacing: 0.005em;
+
+	color: #ffffff;
+	/* height: 188px;
+	width: 459px;
+	left: 223px;
+	top: 389px;
+
+	border-radius: 0px;
+	color: #fff;
+	font-family: Prata;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 94px;
+	letter-spacing: 0.005em;
+	text-align: center; */
 }
 .menu-gradient {
 	background-image: radial-gradient(
@@ -76,6 +183,7 @@ body {
 	width: 100%;
 	height: 100%;
 	color: #fff;
+	display: flex;
 	position: relative;
 
 	background-image: linear-gradient(
@@ -83,6 +191,7 @@ body {
 		#7d4d73 0.3%,
 		rgb(83, 194, 238) /* rgba(255, 255, 255, 0) 99.59% */
 	);
+
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -107,6 +216,20 @@ body {
 	color: black;
 }
 .link:hover {
+	padding: 10px;
+	box-shadow: 0px 12px blue;
+	/* box-shadow: blue; */
+	/* box-shadow: 5px 10px blue; */
+	/* color: #00f; */
+}
+.ui.basic.label {
+	padding-top: 20px;
+	border: none !important;
+}
+.ui.basic.label:hover {
+	box-shadow: 0px 5px blue;
+}
+.label:hover {
 	padding: 10px;
 	box-shadow: 0px 12px blue;
 	/* box-shadow: blue; */
@@ -219,7 +342,41 @@ body.dimmable > .dimmer {
 		animation: App-logo-spin infinite 20s linear;
 	}
 }
-
+.h5-wid {
+	font-family: "Poppins";
+	font-style: italic;
+	line-height: 23.65px;
+}
+h1 {
+	font-family: "Prata" !important;
+	font-size: 30px !important;
+	font-style: normal !important;
+	font-weight: 400 !important;
+	line-height: 42px !important;
+	letter-spacing: 0em !important;
+	text-align: left;
+}
+.sf-line {
+	border: 1px solid #dbffac !important;
+	/* padding: 10px;
+	box-shadow: 5px 10px #dbffac; */
+	/* #background: #DBFFAC; */
+}
+h6 {
+	font-family: "Poppins";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0.09em;
+	text-align: left;
+}
+div {
+	font-family: "Poppins";
+	font-weight: 300;
+	line-height: 34.19px;
+	size: 16px;
+}
 .App-header {
 	background-color: #282c34;
 	min-height: 100vh;
@@ -271,4 +428,26 @@ body.dimmable > .dimmer {
 .img-padding {
 	padding-top: 100px;
 	padding-left: 40px;
+}
+.jurrasic_world-right {
+	padding-top: 100px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 1.5rem;
+}
+.mimisu-image {
+	justify-content: center !important;
+}
+
+.menu-eclipse {
+	position: absolute;
+	width: 576px;
+	height: 278px;
+
+	background-color: red;
+
+	border-radius: 50% / 100%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }

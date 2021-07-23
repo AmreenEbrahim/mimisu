@@ -6,11 +6,12 @@ export const HomeIntro = () => {
 		<div className="home-background">
 			<Container text>
 				<Grid>
-					<Grid.Column row="2">
+					<Grid.Column row="3">
 						<Grid.Row>
 							<Grid.Row>
 								<Image size="medium" src={"../../img/logo/logo-white.png"} />
 							</Grid.Row>
+							<Grid.Row className="home-menu">HOME</Grid.Row>
 							<Grid.Row>
 								<p className="intro-inner">
 									This is the house of Naomi Solis a Amsterdam-based Visual

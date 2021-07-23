@@ -33,11 +33,15 @@ const JurrasicWorldImages = () => {
 						{image.desc ? (
 							<Grid>
 								<Grid.Row columns="2">
-									<Grid.Column width={8}>
-										<img size="large" src={image.src} />
+									<Grid.Column width={9}>
+										<Image size="massive" src={image.src} />
 									</Grid.Column>
-									<Grid.Column>
-										<Grid.Row textAlign="center">{image.desc} </Grid.Row>
+									<Grid.Column
+										textAlign="right"
+										verticalAlign="middle"
+										width={4}
+									>
+										<Grid.Row>{image.desc} </Grid.Row>
 										{/* <Grid.Row>UI design UX </Grid.Row>
 										<Grid.Row>Design</Grid.Row>
 										<Grid.Row>Visual design</Grid.Row> */}

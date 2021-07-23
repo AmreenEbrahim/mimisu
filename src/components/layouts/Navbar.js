@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MenuModal from "../layouts/MenuModal.js";
-import { Input, Menu, Image, Button } from "semantic-ui-react";
+import { Header, Menu, Image, Button } from "semantic-ui-react";
 
 export default class MenuExampleSecondary extends Component {
 	constructor(props) {
@@ -24,28 +24,56 @@ export default class MenuExampleSecondary extends Component {
 					</Link>
 				</Menu.Item>
 
-				<Menu.Menu position="right">
-					<Button
-						basic
-						onClick={() => {
-							this.setState({ modalOpen: true });
-						}}
-					>
-						<Image size="mini" src={"../../img/logo/menu.png"} />
-					</Button>
-					<MenuModal // The invisible modal itself
-						key="modal1"
-						modalOpen={this.state.modalOpen}
-						handleClose={() => {
-							this.setState({ modalOpen: false });
-						}}
-						valueIntoModal={this.state.valueIntoModal}
-					/>
+				{!this.props.menu ? (
+					<Menu.Menu position="right">
+						<Button
+							basic
+							onClick={() => {
+								this.setState({ modalOpen: true });
+							}}
+						>
+							<Image size="mini" src={"../../img/logo/menu.png"} />
+						</Button>
+						<MenuModal // The invisible modal itself
+							key="modal1"
+							modalOpen={this.state.modalOpen}
+							handleClose={() => {
+								this.setState({ modalOpen: false });
+							}}
+							valueIntoModal={this.state.valueIntoModal}
+						/>
 
-					{/* <Link to="/menu">
+						{/* <Link to="/menu">
 						
 					</Link> */}
-				</Menu.Menu>
+					</Menu.Menu>
+				) : (
+					<Menu.Menu position="right">
+						<Button
+							basic
+							onClick={() => {
+								this.setState(
+									{ modalOpen: false },
+									console.log("state", this.state.modalOpen)
+								);
+							}}
+						>
+							<Image size="mini" src={"../../img/logo/close.png"} />
+						</Button>
+						<MenuModal // The invisible modal itself
+							key="modal1"
+							modalOpen={this.state.modalOpen}
+							handleClose={() => {
+								this.setState({ modalOpen: true });
+							}}
+							valueIntoModal={this.state.valueIntoModal}
+						/>
+
+						{/* <Link to="/menu">
+						
+					</Link> */}
+					</Menu.Menu>
+				)}
 			</Menu>
 		);
 	}

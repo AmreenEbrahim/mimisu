@@ -7,6 +7,7 @@ import Home from "../src/components/home/Home";
 import ShootFighter from "./components/shootfighter/ShootFighter";
 import JurrasicWorld from "./components/jurrasic_world/JurrasicWorld";
 import SpinningRecord from "./components/spinning_records/SpinnigRecord";
+import MimisuClothing from "./components/mimisu/MimisuClothing";
 
 import { Header } from "semantic-ui-react";
 import Menu from "./components/menu/Menu";
@@ -17,23 +18,21 @@ import WorkNew from "./components/layouts/WorkNew";
 const App = () => {
 	return (
 		<Router>
-			<Fragment>
-				<Header>
-					<Navbar />
-				</Header>
+			<div>
+				<Navbar />
+
 				<section>
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route exact path="/shoot-fighter" component={ShootFighter} />
 						<Route exact path="/spinning-record" component={SpinningRecord} />
-
-						<Route exact path="/jurrasic_world" component={JurrasicWorld} />
+						<Route exact path="/jurrasic-world" component={JurrasicWorld} />
 						<Route exact path="/contact" component={Contact} />
-						<Route exact path="/work-new" component={WorkNew} />
 						<Route exact path="/work" component={Work} />
+						<Route exact path="/mimisu-clothing" component={MimisuClothing} />
 					</Switch>
 				</section>
-			</Fragment>
+			</div>
 		</Router>
 	);
 };

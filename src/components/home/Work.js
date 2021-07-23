@@ -25,7 +25,7 @@ const images = [
 ];
 const Work = () => (
 	<Container>
-		<Grid divided="vertically">
+		<Grid divided="vertically" verticalAlign="middle">
 			<Grid.Row columns={2}>
 				<Grid.Row columns={2}>
 					<Grid.Column as="h1">My Work</Grid.Column>
@@ -35,8 +35,15 @@ const Work = () => (
 					</Grid.Column>
 				</Grid.Row>
 
-				<Grid.Column>
-					<Carousel autoPlay={true} width="80%" infiniteLoop={true}>
+				<Grid.Column width={7}>
+					<Carousel
+						autoPlay={true}
+						width="80%"
+						infiniteLoop={true}
+						showArrows={false}
+						showIndicators={false}
+						showStatus={false}
+					>
 						{images.map(image => (
 							<div>
 								<Image

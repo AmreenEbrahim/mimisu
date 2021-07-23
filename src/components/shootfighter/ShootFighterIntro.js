@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Image, Container } from "semantic-ui-react";
+import WhatIDid from "../layouts/WhatIDid";
 
 const ShootFighterIntro = () => {
 	return (
@@ -8,6 +9,7 @@ const ShootFighterIntro = () => {
 				<Grid.Row columns="2">
 					<Grid.Column floated="left">
 						<Grid.Row columns="2" width={8}>
+							<Grid.Column as="h6">MIMISU</Grid.Column>
 							<Grid.Column as="h1">Shoot Fighters</Grid.Column>
 							<Grid.Column as="div">
 								Imagine a optimistic space-opera universe, in which the peoples
@@ -20,12 +22,13 @@ const ShootFighterIntro = () => {
 							</Grid.Column>
 						</Grid.Row>
 					</Grid.Column>
-					<Grid.Column Row="4" textAlign="right" floated="right">
+					<WhatIDid align="middle" textAlign="center" />
+					{/* <Grid.Column Row="4" textAlign="right" floated="right">
 						<Grid.Row as="h2">What i did </Grid.Row>
 						<Grid.Row>UI design UX </Grid.Row>
 						<Grid.Row>Design</Grid.Row>
 						<Grid.Row>Visual design</Grid.Row>
-					</Grid.Column>
+					</Grid.Column> */}
 				</Grid.Row>
 			</Grid>
 		</Container>

@@ -21,8 +21,9 @@ class MyModal extends React.Component {
 				size="large"
 				closeOnEscape={true}
 				closeOnRootNodeClick={true}
+				centered={false}
 			>
-				<Navbar />
+				<Navbar menu={true} />
 				<Modal.Header>
 					<Modal.Actions>
 						{/* <Button
@@ -48,13 +49,15 @@ class MyModal extends React.Component {
 										Work
 									</Link>
 								</Header>
-								<Header onClick={this.props.handleClose}>
+								<Header as="h1" onClick={this.props.handleClose}>
 									<Link to="/contact" className="link">
 										Contact
 									</Link>
 								</Header>
 							</Grid.Column>
-							<Grid.Column width={6}></Grid.Column>
+							<Grid.Column width={4}>
+								<Header className="menu-eclipse"></Header>
+							</Grid.Column>
 
 							<Grid.Column width={4} textAlign="left" floated="right">
 								<Header as="h1">Contact</Header>
