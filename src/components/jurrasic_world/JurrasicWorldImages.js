@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Image, Container } from "semantic-ui-react";
-import home from "../../img/shootfighters/home.png";
 
 const JurrasicWorldImages = () => {
 	const images = [
@@ -49,7 +48,7 @@ const JurrasicWorldImages = () => {
 								</Grid.Row>
 							</Grid>
 						) : (
-							<img size="large" src={image.src} />
+							<img size="large" src={image.src} alt="no img" />
 						)}
 					</Grid.Row>
 				))}

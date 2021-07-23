@@ -2,8 +2,6 @@ import React from "react";
 import { Grid, Image, Container } from "semantic-ui-react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import me from "../../img/me.jpeg";
-const src1 = "../../img/me.jpeg";
 
 const images = [
 	{

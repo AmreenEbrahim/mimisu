@@ -442,12 +442,44 @@ div {
 
 .menu-eclipse {
 	position: absolute;
-	width: 576px;
+	width: 500px;
 	height: 278px;
 
-	background-color: red;
+	background-color: #f1c3c3;
 
 	border-radius: 50% / 100%;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 }
+/* moving-background */
+/* .menu-eclipse {
+	position: absolute;
+	width: 576px;
+	height: 278px;
+
+	background-color: #e5e5e5;
+
+	border-radius: 50% / 100%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+
+	background-image: radial-gradient(
+		90deg,
+		pink 99.59%,
+		rgb(83, 194, 238) 
+	);
+
+	background-size: 400% 400%;
+	animation: gradient 15s ease-in-out infinite;
+} */
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */

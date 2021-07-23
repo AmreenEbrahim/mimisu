@@ -1,30 +1,29 @@
 import React from "react";
-import { Grid, Image, Container } from "semantic-ui-react";
-import home from "../../img/shootfighters/home.png";
+import { Grid, Container } from "semantic-ui-react";
 
 const ShootFighterImages = () => {
-	const images = [
-		{
-			name: "image1",
-			type: "video",
-			src: "../../img/shootfighters/home.png"
-		},
-		{
-			name: "image1",
-			type: "image",
-			src: "../../img/shootfighters/menu.png"
-		},
-		{
-			name: "image1",
-			type: "video",
-			src: "../../img/shootfighters/projets.png"
-		},
-		{
-			name: "image1",
-			type: "image",
-			src: "../../img/shootfighters/visuels.png"
-		}
-	];
+	// const images = [
+	// 	{
+	// 		name: "image1",
+	// 		type: "video",
+	// 		src: "../../img/shootfighters/home.png"
+	// 	},
+	// 	{
+	// 		name: "image1",
+	// 		type: "image",
+	// 		src: "../../img/shootfighters/menu.png"
+	// 	},
+	// 	{
+	// 		name: "image1",
+	// 		type: "video",
+	// 		src: "../../img/shootfighters/projets.png"
+	// 	},
+	// 	{
+	// 		name: "image1",
+	// 		type: "image",
+	// 		src: "../../img/shootfighters/visuels.png"
+	// 	}
+	// ];
 	// const home = ../img/shootfighters/home.png";
 	return (
 		<Container>
@@ -46,6 +45,7 @@ const ShootFighterImages = () => {
 						width="1303px"
 						height="749px"
 						src="../../img/shootfighters/projets.png"
+						alt="no img"
 					/>
 				</Grid.Row>
 
@@ -66,6 +66,7 @@ const ShootFighterImages = () => {
 						width="1300px"
 						height="677px"
 						size="large"
+						alt="No img"
 						src="../../img/shootfighters/visuels.png"
 					/>
 				</Grid.Row>

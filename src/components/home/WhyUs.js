@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Image, Item, Label, Grid } from "semantic-ui-react";
+import { Container, Image, Label, Grid } from "semantic-ui-react";
 import me from "../../img/me.jpeg";
 
 const WhyUs = () => {

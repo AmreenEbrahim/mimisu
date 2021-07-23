@@ -90,8 +90,3 @@ const Work = () => {
 };
 
 export default Work;
-{
-	/* <video autoPlay loop muted>
-							<source src="../../img/work/follow.mp4" type="video/mp4" />
-						</video> */
-}

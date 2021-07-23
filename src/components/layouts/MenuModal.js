@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Header, Button, Icon, Grid } from "semantic-ui-react";
+import { Modal, Header, Grid } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";

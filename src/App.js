@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
@@ -9,11 +9,8 @@ import JurrasicWorld from "./components/jurrasic_world/JurrasicWorld";
 import SpinningRecord from "./components/spinning_records/SpinnigRecord";
 import MimisuClothing from "./components/mimisu/MimisuClothing";
 
-import { Header } from "semantic-ui-react";
-import Menu from "./components/menu/Menu";
 import { Contact } from "./components/layouts/Contact";
 import Work from "./components/work/Work";
-import WorkNew from "./components/layouts/WorkNew";
 
 const App = () => {
 	return (
