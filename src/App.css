@@ -323,10 +323,12 @@ body.dimmable > .dimmer {
 	top: 1917px;
 }
 .intro-inner {
-	height: 115px;
+	margin: 10px;
+	height: 120px;
 	width: 302px;
 	left: 337px;
 	top: 401px;
+	padding-top: 20px !important;
 	border-radius: 0px;
 	color: #fff;
 }
@@ -773,3 +775,18 @@ h2 {
 	padding: 5px 15px;
 	text-align: center;
 }
+/* 
+	@media screen and (max-width: 600px) {
+		.videocontainer {
+			width: 1750px;
+			height: 1226px;
+			left: -668px;
+			top: -392px;
+		}
+	}
+	@media screen and (max-width: 768px)
+	media screen and (max-width: 768px)
+	.Header_main_container__1Cy9- {
+		justify-content: start;
+		padding: 0 0 0 79px;
+	} */

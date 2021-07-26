@@ -48,7 +48,7 @@ const Work = props => (
 			<Grid.Row columns={2}>
 				<Grid.Row columns={2}>
 					<Grid.Column className="h1-mywork">My Work</Grid.Column>
-					<Grid.Column as="div" width={5}>
+					<Grid.Column as="div" width={4}>
 						I’m passionate about improving the creative space, empowering
 						creators and communities and creating meaningful relationships.{" "}
 					</Grid.Column>
@@ -78,12 +78,9 @@ const Work = props => (
 						itemClass="carousel-item-padding-40-px"
 					>
 						{images.map(image => (
-							<Image
-								src={image.src}
-								size="large"
-								href={image.href}
-								target="_blank"
-							/>
+							<Link to={image.href}>
+								<Image src={image.src} size="large" target="_blank" />
+							</Link>
 						))}
 					</Carousel>
 				</Grid.Column>
