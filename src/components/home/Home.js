@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { HomeIntro } from "./HomeIntro";
+// import { HomeIntro } from "./HomeIntro";
 import WhyUs from "./WhyUs";
 import Work from "./Work";
 import HomeGradient from "./HomeGradient";
