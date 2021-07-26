@@ -14,7 +14,7 @@ class MyModal extends React.Component {
 		return (
 			<Modal
 				basic
-				// onClick={this.props.handleClose}
+				onClick={this.props.handleClose}
 				onClose={this.props.handleClose}
 				onOpen={this.props.handleClose}
 				open={this.props.modalOpen}
@@ -23,22 +23,19 @@ class MyModal extends React.Component {
 				closeOnRootNodeClick={true}
 				centered={false}
 			>
-				<Navbar menu={true} />
-				<Modal.Header>
-					<Modal.Actions>
-						{/* <Button
-							type="button"
-							icon="remove"
-							labelPosition="right"
-							onClick={this.props.handleClose}
-						/> */}
-					</Modal.Actions>
-				</Modal.Header>
+				<Modal.Content>
+					<Navbar menu={true} />
+				</Modal.Content>
+				<Modal.Content>
+					<Header>
+						<label className="menu-page">menu</label>
+					</Header>
+				</Modal.Content>
 
 				<Modal.Content>
-					<Grid>
-						<Grid.Row columns="3">
-							<Grid.Column width={4}>
+					<Grid stackable>
+						<Grid.Row columns="4">
+							<Grid.Column width={3} className="menu-padding ">
 								<Header as="h1" color="white" onClick={this.props.handleClose}>
 									<Link to="/" className="link">
 										Home
@@ -55,19 +52,34 @@ class MyModal extends React.Component {
 									</Link>
 								</Header>
 							</Grid.Column>
-							<Grid.Column width={4}>
-								<Header className="menu-eclipse"></Header>
+							<Grid.Column className="gradient-shift">
+								<video
+									width="auto"
+									className="menu-eclipse"
+									// className=" video-container video-container-overlay"
+									autoPlay
+									loop
+									muted
+								>
+									<source src="../../img/menu.mp4" type="video/mp4" />
+								</video>
 							</Grid.Column>
 
-							<Grid.Column width={4} textAlign="left" floated="right">
-								<Header as="h1">Contact</Header>
-								<Header as="h6" color="red">
-									Send me an e-mail
+							<Grid.Column
+								textAlign="left"
+								verticalAlign="middle"
+								floated="right"
+							>
+								<Header as="h3" className="menu-contact">
+									Contact
 								</Header>
-								<Header as="h6" color="red">
-									+1234 56432 2
+								<Header as="h6" color="red" className="menu-sendme">
+									<u>Send me an e-mail</u>
 								</Header>
-								<Header as="h6" color="red">
+								<Header as="h6" color="red" className="menu-sendme">
+									<u>+1234 56432 2</u>
+								</Header>
+								<Header as="h6" color="red" className="menu-sendme">
 									social links
 								</Header>
 							</Grid.Column>

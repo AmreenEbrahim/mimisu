@@ -12,12 +12,14 @@ import MimisuClothing from "./components/mimisu/MimisuClothing";
 import { Contact } from "./components/layouts/Contact";
 import Work from "./components/work/Work";
 
+// import { Container } from "semantic-ui-react";
+
 const App = () => {
 	return (
 		<Router>
 			<div>
 				<Navbar />
-
+				{/* <Container className="stripe" /> */}
 				<section>
 					<Switch>
 						<Route exact path="/" component={Home} />

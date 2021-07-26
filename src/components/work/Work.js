@@ -1,91 +1,105 @@
 import React from "react";
-import { Container, Grid, Image, GridColumn } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Grid, Image, GridColumn } from "semantic-ui-react";
 
 const Work = () => {
 	//../../img/home/slider/axis.png
 	return (
-		<Container>
-			<Grid stackable>
-				<Grid.Row columns="2">
-					<GridColumn
-						width={9}
-						// className="col-12 col-md-5 col-lg-5"
-						verticalAlign="middle"
-					>
-						<figure>
+		// <Container>
+		<Grid stackable>
+			<Grid.Row columns="2">
+				<GridColumn
+					width={9}
+					// className="col-12 col-md-5 col-lg-5"
+					verticalAlign="middle"
+				>
+					<figure>
+						<Link to="/spinning-record" target="blank">
 							<video
 								className="video-container video-container-overlay"
-								width="600"
+								width="700px"
 								autoPlay
 								loop
 								muted
 							>
 								<source src="../../img/work/follow.mp4" type="video/mp4" />
 							</video>{" "}
-							<figcaption className="figure-caption text-left">
-								SPINNING RECORDS
-							</figcaption>
-							<figcaption className="figure-caption text-left">
-								Music Video
-							</figcaption>
-						</figure>
-					</GridColumn>
-
-					<Grid.Column width={5} verticalAlign="bottom" textAlign="left">
-						<figure>
-							<Image
-								className="img-padding"
-								src="../../img/work/jw.jpg"
-								size="large"
-							/>
-							<figcaption className="figure-caption text-center">
-								JURASSIC WORLD MINIATURE GAME
-							</figcaption>
-							<figcaption className="figure-caption text-right">
-								Website
-							</figcaption>
-						</figure>
-					</Grid.Column>
-				</Grid.Row>
-
-				<Grid.Row columns="2">
-					<Grid.Column width={5} verticalAlign="top" textAlign="left">
-						<figure>
-							<Image src="../../img/work/shootfighter.png" size="small" />
-							<figcaption className="figure-caption text-right">
-								Shootfighter
-							</figcaption>
-							<figcaption className="figure-caption text-right">
-								Website
-							</figcaption>
-						</figure>
-					</Grid.Column>
-					<Grid.Column width={8} verticalAlign="bottom" textAlign="left">
-						<figure className="img-padding">
-							<Image src="../../img/work/mimisu.png" size="huge" />
-							<figcaption className="figure-caption text-right">
-								MIMISUCLOTHING
-							</figcaption>
-							<figcaption className="figure-caption text-right">
-								Photography / Fashion Designing
-							</figcaption>
-						</figure>
-					</Grid.Column>
-				</Grid.Row>
-				<Grid.Row>
-					<figure className="img__wrap">
-						<Image src="../../img/work/axisdigitaal.png" size="small" />
-						<figcaption className="figure-caption text-right">
-							Axis DIGITAAL
+						</Link>
+						<figcaption className="figure-caption text-left">
+							SPINNING RECORDS
 						</figcaption>
-						<figcaption className="figure-caption text-right">
-							Website / Animated Video
+						<figcaption className="figure-caption text-left">
+							Music Video
 						</figcaption>
-						<p class="img__description">Coming soon.</p>
 					</figure>
-				</Grid.Row>
-			</Grid>
-		</Container>
+				</GridColumn>
+
+				<Grid.Column width={5} verticalAlign="bottom" textAlign="right">
+					<figure className="img-padding">
+						<Image
+							src="../../img/work/jw.jpg"
+							size="medium"
+							href="/jurrasic-world"
+							target="blank"
+						/>
+						<figcaption className="figure-caption text-center">
+							JURASSIC WORLD MINIATURE GAME
+						</figcaption>
+						<figcaption className="figure-caption text-center">
+							Website
+						</figcaption>
+					</figure>
+				</Grid.Column>
+			</Grid.Row>
+
+			<Grid.Row columns="2">
+				<Grid.Column width={5} verticalAlign="top" textAlign="left">
+					<figure>
+						<Image
+							src="../../img/work/shootfighter.png"
+							href="/shoot-fighter"
+							target="blank"
+							size="small"
+						/>
+						<figcaption className="figure-caption text-right">
+							Shootfighter
+						</figcaption>
+						<figcaption className="figure-caption text-right">
+							Website
+						</figcaption>
+					</figure>
+				</Grid.Column>
+				<Grid.Column width={8} verticalAlign="bottom" textAlign="left">
+					<figure className="img-padding">
+						<Image
+							src="../../img/work/mimisu.png"
+							size="large"
+							href="/mimisu-clothing"
+							target="blank"
+						/>
+						<figcaption className="figure-caption text-right">
+							MIMISUCLOTHING
+						</figcaption>
+						<figcaption className="figure-caption text-right">
+							Photography / Fashion Designing
+						</figcaption>
+					</figure>
+				</Grid.Column>
+			</Grid.Row>
+			<Grid.Row>
+				<figure className="img__wrap">
+					<Image src="../../img/work/axisdigitaal.png" size="small" />
+					<figcaption className="figure-caption text-right">
+						Axis DIGITAAL
+					</figcaption>
+					<figcaption className="figure-caption text-right">
+						Website / Animated Video
+					</figcaption>
+					<p class="img__description">Coming soon.</p>
+				</figure>
+			</Grid.Row>
+		</Grid>
+		// </Container>
 	);
 };
 

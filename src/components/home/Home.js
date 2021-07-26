@@ -2,12 +2,14 @@ import React, { Fragment } from "react";
 import { HomeIntro } from "./HomeIntro";
 import WhyUs from "./WhyUs";
 import Work from "./Work";
+import HomeGradient from "./HomeGradient";
 
 const Home = () => {
 	return (
 		<Fragment>
-			<HomeIntro />
-			<WhyUs />>
+			<HomeGradient />
+			{/* <HomeIntro /> */}
+			<WhyUs />
 			<Work />
 		</Fragment>
 	);

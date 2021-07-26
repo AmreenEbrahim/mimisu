@@ -5,10 +5,13 @@ import { Container } from "semantic-ui-react";
 
 const MimisuClothing = () => {
 	return (
-		<Container>
-			<MimisuIntro />
-			<MimisuImages />
-		</Container>
+		<div>
+			<Container className="stripe" />
+			<Container>
+				<MimisuIntro />
+				<MimisuImages />
+			</Container>
+		</div>
 	);
 };
 export default MimisuClothing;

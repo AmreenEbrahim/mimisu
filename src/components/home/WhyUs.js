@@ -6,8 +6,8 @@ const WhyUs = () => {
 	return (
 		<Container className="ui.container ">
 			<Grid stackable>
-				<Grid.Row columns="3">
-					<Grid.Column width={6}>
+				<Grid.Row columns="2">
+					<Grid.Column floated="left">
 						<Image
 							size="large"
 							href="http://google.com"
@@ -15,7 +15,7 @@ const WhyUs = () => {
 							src={me}
 						/>
 					</Grid.Column>
-					<Grid.Column rows="4" verticalAlign="middle">
+					<Grid.Column rows="4" verticalAlign="middle" floated="left">
 						<Grid.Row as="h6">WHY WORK AVEC MOI</Grid.Row>
 						<Grid.Row as="h2">A little bit about me </Grid.Row>
 						<Grid.Row>
@@ -25,41 +25,21 @@ const WhyUs = () => {
 							in all i create.
 						</Grid.Row>
 						<Grid.Row>
-							<Grid columns="2">
-								<Grid.Column>
+							<Grid>
+								<Grid.Column width={6}>
 									<Grid.Row>
-										<Label
-											basic
-											// color="green"
-										>
-											Visual design
-										</Label>
+										<Label basic>Visual design</Label>
 									</Grid.Row>
 									<Grid.Row>
-										<Label
-											basic
-											// color="pink"
-										>
-											Photography
-										</Label>
+										<Label basic>Photography</Label>
 									</Grid.Row>
 								</Grid.Column>
-								<Grid.Column>
+								<Grid.Column width={7}>
 									<Grid.Row>
-										<Label
-											basic
-											// color="yellow"
-										>
-											Videography
-										</Label>
+										<Label basic>Videography</Label>
 									</Grid.Row>
 									<Grid.Row>
-										<Label
-											basic
-											//  color="blue"
-										>
-											fRONT-END (learning)
-										</Label>
+										<Label basic>FRONT-END (learning)</Label>
 									</Grid.Row>
 								</Grid.Column>
 							</Grid>

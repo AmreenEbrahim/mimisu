@@ -10,7 +10,9 @@ const ShootFighterIntro = () => {
 					<Grid.Column floated="left">
 						<Grid.Row columns="2" width={8}>
 							<Grid.Column as="h6">MIMISU</Grid.Column>
-							<Grid.Column as="h1">Shoot Fighters</Grid.Column>
+							<Grid.Column as="h1">
+								<p>Shoot-fighters</p>
+							</Grid.Column>
 							<Grid.Column as="div">
 								Imagine a optimistic space-opera universe, in which the peoples
 								of the galaxy converge on the Center, a multicultural diplomatic

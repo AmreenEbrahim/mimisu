@@ -1,74 +1,90 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Grid, Image, Container } from "semantic-ui-react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
+const responsive = {
+	desktop: {
+		breakpoint: { max: 3000, min: 1024 },
+		items: 1
+	},
+	tablet: {
+		breakpoint: { max: 1024, min: 464 },
+		items: 2,
+		slidesToSlide: 2 // optional, default to 1.
+	},
+	mobile: {
+		breakpoint: { max: 464, min: 0 },
+		items: 1,
+		slidesToSlide: 1 // optional, default to 1.
+	}
+};
 const images = [
 	{
 		name: "image1",
-		src: "../../img/home/slider/jurassic.jpg"
+		src: "../../img/home/slider/jurassic.jpg",
+		href: "/jurrasic-world"
 	},
 	{
 		name: "image2",
-		src: "../../img/home/slider/axis.png"
+		src: "../../img/home/slider/axis.png",
+		href: "/jurrasic-world"
 	},
 	{
 		name: "image3",
-		src: "../../img/home/slider/guilder.png"
+		src: "../../img/home/slider/guilder.png",
+		href: "/jurrasic-world"
 	},
 	{
 		name: "image4",
-		src: "../../img/home/slider/shootfighter.png"
+		src: "../../img/home/slider/shootfighter.png",
+		href: "/shoot-fighter"
 	}
 ];
-const Work = () => (
+const Work = props => (
 	<Container>
 		<Grid divided="vertically" verticalAlign="middle">
 			<Grid.Row columns={2}>
 				<Grid.Row columns={2}>
-					<Grid.Column as="h1">My Work</Grid.Column>
-					<Grid.Column as="div">
+					<Grid.Column className="h1-mywork">My Work</Grid.Column>
+					<Grid.Column as="div" width={5}>
 						I’m passionate about improving the creative space, empowering
 						creators and communities and creating meaningful relationships.{" "}
 					</Grid.Column>
+					<Grid.Column as="h6" width={5}>
+						<Link className="link" to="/work">
+							SEE WORK
+						</Link>
+					</Grid.Column>
 				</Grid.Row>
 
-				<Grid.Column width={7}>
+				<Grid.Column>
 					<Carousel
+						swipeable={true}
+						showDots={true}
+						arrows={false}
+						// partialVisible={true}
+						responsive={responsive}
+						// means to render carousel on server-side.
+						infinite={true}
 						autoPlay={true}
-						width="80%"
-						infiniteLoop={true}
-						showArrows={false}
-						showIndicators={false}
-						showStatus={false}
+						autoPlaySpeed={1000}
+						keyBoardControl={true}
+						transitionDuration={500}
+						removeArrowOnDeviceType={["tablet", "mobile"]}
+						deviceType={props.deviceType}
+						dotListClass="custom-dot-list-style"
+						itemClass="carousel-item-padding-40-px"
 					>
 						{images.map(image => (
-							<div>
-								<Image
-									src={image.src}
-									size="large"
-									href="http://google.com"
-									target="_blank"
-								/>
-							</div>
+							<Image
+								src={image.src}
+								size="large"
+								href={image.href}
+								target="_blank"
+							/>
 						))}
-
-						{/* <div>
-							<Image
-								src={me}
-								size="large"
-								href="http://google.com"
-								target="_blank"
-							/>
-						</div> */}
-						{/* <div>
-							<Image
-								src={me}
-								size="large"
-								href="http://google.com"
-								target="_blank"
-							/>
-						</div> */}
 					</Carousel>
 				</Grid.Column>
 			</Grid.Row>

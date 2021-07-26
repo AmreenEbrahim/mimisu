@@ -6,15 +6,14 @@ const WhatIDid = props => {
 
 	return (
 		<Grid.Column
-			className="h5-wid"
 			Row="4"
 			textAlign={props.textAlign ? props.textAlign : "center"}
 			verticalAlign={props.align ? props.align : "middle"}
 		>
-			<Grid.Row as="h5">What i did </Grid.Row>
-			<Grid.Row>UI design </Grid.Row>
-			<Grid.Row>UX Design</Grid.Row>
-			<Grid.Row>Visual design</Grid.Row>
+			<Grid.Row as="h4">What i did </Grid.Row>
+			<Grid.Row className="italic-font">UI design </Grid.Row>
+			<Grid.Row className="italic-font">UX Design</Grid.Row>
+			<Grid.Row className="italic-font">Visual design</Grid.Row>
 		</Grid.Column>
 	);
 };

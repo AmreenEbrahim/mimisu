@@ -25,34 +25,43 @@ const JurrasicWorldImages = () => {
 	];
 	// const home = ../img/shootfighters/home.png";
 	return (
-		<Container>
-			<Grid Row="3" centered width="100%">
-				{images.map(image => (
-					<Grid.Row>
-						{image.desc ? (
+		<Grid Row="3" centered width="100%">
+			{images.map(image => (
+				<Grid.Row>
+					{image.desc ? (
+						<div className="jw-img">
 							<Grid>
 								<Grid.Row columns="2">
 									<Grid.Column width={9}>
 										<Image size="massive" src={image.src} />
 									</Grid.Column>
 									<Grid.Column
-										textAlign="right"
+										textAlign="left"
+										width={3}
 										verticalAlign="middle"
-										width={4}
 									>
-										<Grid.Row>{image.desc} </Grid.Row>
+										<Grid.Row className="img-desc" verticalAlign="middle">
+											{image.desc}{" "}
+										</Grid.Row>
 										{/* <Grid.Row>UI design UX </Grid.Row>
 										<Grid.Row>Design</Grid.Row>
 										<Grid.Row>Visual design</Grid.Row> */}
 									</Grid.Column>
 								</Grid.Row>
 							</Grid>
-						) : (
-							<img size="large" src={image.src} alt="no img" />
-						)}
-					</Grid.Row>
-				))}
-				{/* <Grid.Row>
+						</div>
+					) : (
+						<Container>
+							<Grid>
+								<Grid.Row>
+									<Image size="massive" src={image.src} />
+								</Grid.Row>
+							</Grid>
+						</Container>
+					)}
+				</Grid.Row>
+			))}
+			{/* <Grid.Row>
 					<Image size="large" src={home} />
 				</Grid.Row>
 				<Grid.Row>
@@ -61,8 +70,7 @@ const JurrasicWorldImages = () => {
 				<Grid.Row>
 					<Image size="large" src={home} />
 				</Grid.Row> */}
-			</Grid>
-		</Container>
+		</Grid>
 	);
 };
 // const PropsBox = styled.div(props => ({
