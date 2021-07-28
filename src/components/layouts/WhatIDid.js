@@ -6,6 +6,7 @@ const WhatIDid = props => {
 
 	return (
 		<Grid.Column
+			classname="wat"
 			Row="4"
 			textAlign={props.textAlign ? props.textAlign : "center"}
 			verticalAlign={props.align ? props.align : "middle"}

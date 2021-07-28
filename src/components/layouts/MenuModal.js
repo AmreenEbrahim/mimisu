@@ -18,7 +18,7 @@ class MyModal extends React.Component {
 				onClose={this.props.handleClose}
 				onOpen={this.props.handleClose}
 				open={this.props.modalOpen}
-				size="large"
+				size="fullscreen"
 				closeOnEscape={true}
 				closeOnRootNodeClick={true}
 				centered={false}
@@ -35,8 +35,8 @@ class MyModal extends React.Component {
 				<Modal.Content>
 					<Grid stackable>
 						<Grid.Row columns="4">
-							<Grid.Column width={3} className="menu-padding ">
-								<Header as="h1" color="white" onClick={this.props.handleClose}>
+							<Grid.Column width={3} className="menu-padding menu-container">
+								<Header as="h1" onClick={this.props.handleClose}>
 									<Link to="/" className="link">
 										Home
 									</Link>

@@ -7,17 +7,18 @@ import "react-multi-carousel/lib/styles.css";
 const responsive = {
 	desktop: {
 		breakpoint: { max: 3000, min: 1024 },
-		items: 1
+		items: 1,
+		partialVisibilityGutter: 180
 	},
 	tablet: {
 		breakpoint: { max: 1024, min: 464 },
 		items: 2,
-		slidesToSlide: 2 // optional, default to 1.
+		partialVisibilityGutter: 100
 	},
 	mobile: {
 		breakpoint: { max: 464, min: 0 },
 		items: 1,
-		slidesToSlide: 1 // optional, default to 1.
+		partialVisibilityGutter: 90
 	}
 };
 const images = [
@@ -44,13 +45,13 @@ const images = [
 ];
 const Work = props => (
 	<Container>
-		<Grid divided="vertically" verticalAlign="middle">
+		<Grid verticalAlign="middle">
 			<Grid.Row columns={2}>
-				<Grid.Row columns={2}>
+				<Grid.Row columns={2} width={5}>
 					<Grid.Column className="h1-mywork">My Work</Grid.Column>
-					<Grid.Column as="div" width={4}>
+					<Grid.Column as="div" width={6} className="whyuswidth">
 						I’m passionate about improving the creative space, empowering
-						creators and communities and creating meaningful relationships.{" "}
+						creators and communities and creating meaningful relationships.
 					</Grid.Column>
 					<Grid.Column as="h6" width={5}>
 						<Link className="link" to="/work">
@@ -59,18 +60,20 @@ const Work = props => (
 					</Grid.Column>
 				</Grid.Row>
 
-				<Grid.Column>
+				<Grid.Column width={8} className="carasoul-home">
+					<Grid.Column></Grid.Column>
 					<Carousel
 						swipeable={true}
 						showDots={true}
 						arrows={false}
-						// partialVisible={true}
+						partialVisible={true}
 						responsive={responsive}
 						// means to render carousel on server-side.
 						infinite={true}
 						autoPlay={true}
 						autoPlaySpeed={1000}
 						keyBoardControl={true}
+						customTransition="all .5"
 						transitionDuration={500}
 						removeArrowOnDeviceType={["tablet", "mobile"]}
 						deviceType={props.deviceType}
@@ -79,7 +82,7 @@ const Work = props => (
 					>
 						{images.map(image => (
 							<Link to={image.href}>
-								<Image src={image.src} size="large" target="_blank" />
+								<Image src={image.src} size="medium" />
 							</Link>
 						))}
 					</Carousel>

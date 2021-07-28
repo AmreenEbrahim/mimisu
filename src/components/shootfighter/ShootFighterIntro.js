@@ -24,8 +24,25 @@ const ShootFighterIntro = () => {
 							</Grid.Column>
 						</Grid.Row>
 					</Grid.Column>
-					<WhatIDid align="middle" textAlign="center" />
-					{/* <Grid.Column Row="4" textAlign="right" floated="right">
+					{/* <WhatIDid align="middle" textAlign="center" /> */}
+					<Grid.Column
+						classname="wat"
+						Row="4"
+						textAlign="center"
+						verticalAlign="middle"
+					>
+						<Grid.Row as="h4">What i did </Grid.Row>
+						<Grid.Row className="italic-font">UI design </Grid.Row>
+						<Grid.Row className="italic-font">UX Design</Grid.Row>
+						<Grid.Row className="italic-font">Visual design</Grid.Row>
+					</Grid.Column>
+					{/* <Grid.Column
+						classname="wat"
+						Row="4"
+						verticalAlign="middle"
+						textAlign="center"
+						floated="right"
+					>
 						<Grid.Row as="h2">What i did </Grid.Row>
 						<Grid.Row>UI design UX </Grid.Row>
 						<Grid.Row>Design</Grid.Row>

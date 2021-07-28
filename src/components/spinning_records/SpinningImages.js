@@ -4,7 +4,7 @@ import { Grid, Image } from "semantic-ui-react";
 
 const SpinningImages = () => {
 	return (
-		<Grid Row="2" className="jw-img" centered width="100%">
+		<Grid stackable Row="2" className="jw-img" centered width="100%">
 			<Grid.Row>
 				<video
 					className="video-container video-container-overlay"
@@ -26,9 +26,9 @@ const SpinningImages = () => {
 				</Grid.Column>
 				<Grid.Column>
 					<video
-						className="video-container video-container-overlay"
-						width="400px"
-						height="450px"
+						className="video-width video-container video-container-overlay"
+						// width="400px"
+						// height="450px"
 						autoPlay
 						loop
 						muted
@@ -40,10 +40,21 @@ const SpinningImages = () => {
 					</video>
 				</Grid.Column>
 				{/* <WhatIDid textAlign="center" verticalAlign="middle" /> */}
-				<Grid.Column width={4} Row="4" textAlign="left" verticalAlign="middle">
+				<Grid.Column
+					className="wat"
+					width={4}
+					Row="4"
+					floated="right"
+					textAlign="left"
+					verticalAlign="middle"
+				>
 					<Grid.Row as="h5">What i did </Grid.Row>
-					<Grid.Row as="h6">Storyboard </Grid.Row>
-					<Grid.Row as="h6">Video Production</Grid.Row>
+					<Grid.Row as="h6" className="italic-font">
+						Storyboard{" "}
+					</Grid.Row>
+					<Grid.Row as="h6" className="italic-font">
+						Video Production
+					</Grid.Row>
 					{/* <Grid.Row>Visual design</Grid.Row> */}
 				</Grid.Column>
 			</Grid.Row>

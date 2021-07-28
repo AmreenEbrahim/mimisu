@@ -14,10 +14,12 @@ const Work = () => {
 					verticalAlign="middle"
 				>
 					<figure>
-						<Link to="/spinning-record" target="blank">
+						<Link
+							to="/spinning-record"
+							// target="blank"
+						>
 							<video
-								className="video-container video-container-overlay"
-								width="700px"
+								className="work-video video-container video-container-overlay"
 								autoPlay
 								loop
 								muted
@@ -40,7 +42,6 @@ const Work = () => {
 							src="../../img/work/jw.jpg"
 							size="medium"
 							href="/jurrasic-world"
-							target="blank"
 						/>
 						<figcaption className="figure-caption text-center">
 							JURASSIC WORLD MINIATURE GAME
@@ -58,7 +59,7 @@ const Work = () => {
 						<Image
 							src="../../img/work/shootfighter.png"
 							href="/shoot-fighter"
-							target="blank"
+							// target="blank"
 							size="small"
 						/>
 						<figcaption className="figure-caption text-right">
@@ -75,7 +76,7 @@ const Work = () => {
 							src="../../img/work/mimisu.png"
 							size="large"
 							href="/mimisu-clothing"
-							target="blank"
+							// target="blank"
 						/>
 						<figcaption className="figure-caption text-right">
 							MIMISUCLOTHING
@@ -90,7 +91,7 @@ const Work = () => {
 				<figure className="img__wrap">
 					<Image src="../../img/work/axisdigitaal.png" size="small" />
 					<figcaption className="figure-caption text-right">
-						Axis DIGITAAL
+						AXIS DIGITAAL
 					</figcaption>
 					<figcaption className="figure-caption text-right">
 						Website / Animated Video

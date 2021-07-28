@@ -4,21 +4,16 @@ import me from "../../img/me.jpeg";
 
 const WhyUs = () => {
 	return (
-		<Container className="ui.container ">
+		<Container>
 			<Grid stackable>
 				<Grid.Row columns="2">
-					<Grid.Column floated="left">
-						<Image
-							size="large"
-							href="http://google.com"
-							target="_blank"
-							src={me}
-						/>
+					<Grid.Column width={6} floated="left">
+						<Image size="large" src={me} />
 					</Grid.Column>
-					<Grid.Column rows="4" verticalAlign="middle" floated="left">
+					<Grid.Column rows="4" width={9} verticalAlign="bottom" floated="left">
 						<Grid.Row as="h6">WHY WORK AVEC MOI</Grid.Row>
 						<Grid.Row as="h2">A little bit about me </Grid.Row>
-						<Grid.Row>
+						<Grid.Row as="div" className="whyuswidth">
 							My talents lie in taking brands to the next level by enhancing
 							their identity and digital footprint. I like to take a fresh
 							approach to every project and strive to create something memorable
@@ -27,7 +22,7 @@ const WhyUs = () => {
 						<Grid.Row>
 							<Grid>
 								<Grid.Column width={6}>
-									<Grid.Row>
+									<Grid.Row className="whyus">
 										<Label basic>Visual design</Label>
 									</Grid.Row>
 									<Grid.Row>
@@ -35,7 +30,7 @@ const WhyUs = () => {
 									</Grid.Row>
 								</Grid.Column>
 								<Grid.Column width={7}>
-									<Grid.Row>
+									<Grid.Row className="whyus">
 										<Label basic>Videography</Label>
 									</Grid.Row>
 									<Grid.Row>

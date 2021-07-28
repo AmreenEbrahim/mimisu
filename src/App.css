@@ -1,10 +1,13 @@
 /* Global Styles */
 :root {
-	margin: 0;
-	padding: 0;
+	--primary-color: white;
+	--dark-color: #343a40;
+	--light-color: #f4f4f4;
+	--danger-color: #dc3545;
+	--success-color: #28a745;
 }
-
 * {
+	/* box-sizing: border-box; */
 	margin: 0;
 	padding: 0;
 }
@@ -87,10 +90,10 @@ span {
 	position: absolute;
 	width: 433px;
 	height: 59px;
-	left: 223px;
-	top: 644px;
+	left: 7%;
+	top: 85%;
 
-	font-family: Poppins;
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 19px;
@@ -105,10 +108,10 @@ span {
 	position: absolute;
 	width: 322px;
 	height: 75px;
-	left: 223px;
-	top: 735px;
+	left: 10%;
+	top: 75%;
 
-	font-family: Poppins;
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -116,15 +119,17 @@ span {
 	/* or 27px */
 
 	letter-spacing: 0.09em;
+	text-align: initial;
 
 	color: #ffff;
 }
 .contact-social {
 	position: absolute;
+	text-align: initial;
 	width: 155px;
 	height: 17px;
-	left: 223px;
-	top: 810px;
+	left: 10%;
+	top: 100%;
 
 	font-family: "Roboto";
 	font-style: normal;
@@ -138,10 +143,11 @@ span {
 }
 .contact-p {
 	position: absolute;
+	text-align: initial;
 	width: 459px;
 	height: 188px;
-	left: 223px;
-	top: 389px;
+	left: 11%;
+	top: 40%;
 
 	font-family: "Prata";
 	font-style: normal;
@@ -328,7 +334,27 @@ body.dimmable > .dimmer {
 	width: 302px;
 	left: 337px;
 	top: 401px;
-	padding-top: 20px !important;
+	padding-top: 30px !important;
+	border-radius: 0px;
+	color: #fff;
+}
+.intro-inner2 {
+	margin: 10px;
+	height: 120px;
+	width: 302px;
+	left: 337px;
+	top: 401px;
+	padding-top: 30px !important;
+	border-radius: 0px;
+	color: #fff;
+}
+.intro-inner1 {
+	margin: 10px;
+	height: 120px;
+	width: 302px;
+	left: 337px;
+	top: 401px;
+	padding-top: 30px !important;
 	border-radius: 0px;
 	color: #fff;
 }
@@ -347,7 +373,7 @@ body.dimmable > .dimmer {
 }
 
 .ui.container {
-	margin-top: 10% !important;
+	margin-top: 3% !important;
 }
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
@@ -650,7 +676,7 @@ h2 {
 	font-family: "Poppins";
 	font-style: italic;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 12px;
 
 	letter-spacing: 0.03em;
 
@@ -720,13 +746,12 @@ h2 {
 
 	letter-spacing: 0.205em;
 	text-transform: uppercase;
-
 	color: #000000;
 
 	transform: rotate(-90deg);
 }
 .menu-padding {
-	padding-left: 130px !important;
+	padding-left: 110px !important;
 }
 .home-whyus {
 	padding-top: 50px !important;
@@ -775,6 +800,10 @@ h2 {
 	padding: 5px 15px;
 	text-align: center;
 }
+
+.whyus {
+	padding-bottom: 3px !important;
+}
 /* 
 	@media screen and (max-width: 600px) {
 		.videocontainer {
@@ -790,3 +819,239 @@ h2 {
 		justify-content: start;
 		padding: 0 0 0 79px;
 	} */
+.video-width {
+	width: 400px;
+	height: 450px;
+}
+.work-video {
+	width: 100%;
+}
+.wid {
+	display: inherit !important;
+}
+.contact-video {
+	width: 100%;
+	height: 100%;
+}
+.whyuswidth {
+	width: 350px;
+}
+.modals.dimmer[class*="top aligned"] .modal {
+	margin: -1vh auto !important;
+}
+.ui.fullscreen.modal {
+	width: 100% !important;
+}
+.carasoul-home {
+	display: grid !important;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 8fr));
+	grid-gap: 1em;
+}
+@media (max-width: 360px) {
+	div {
+		overflow: hidden;
+		word-wrap: break-word;
+		/* font-family: "Poppins";
+		font-weight: 300;
+		line-height: 21px;
+		size: 10px; */
+	}
+	.contact-video {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		word-wrap: break-word;
+	}
+	.videocontainer {
+		width: 1750px;
+		height: 1226px;
+		left: -668px;
+		top: -392px;
+	}
+	/* .videocontainer {
+		overflow: hidden;
+		word-wrap: break-word;
+		width: 100%;
+	} */
+	/* video {
+		width: 100%;
+		max-height: 100%;
+	}
+	video source {
+		width: 100%;
+		height: auto;
+	} */
+	.ui.grid > .row:first-child > .column {
+		margin-top: 0 !important;
+		display: contents;
+		padding: 50px !important;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	/* .ui[class*="vertically divided"].grid > .row:first-child > .column {
+		display: contents;
+	} */
+
+	.img-padding {
+		padding-top: 50px !important;
+	}
+	.wat {
+		display: none !important;
+	}
+	.menu-container {
+		justify-content: start;
+		padding: 0 0 0 79px !important;
+	}
+	.menu-contact {
+		display: none;
+	}
+	.menu-page {
+		font-size: 10px;
+		position: absolute;
+		width: 39px;
+		height: -1px;
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: bold;
+
+		line-height: 83px;
+		letter-spacing: 0.205em;
+		text-transform: uppercase;
+		color: #000000;
+		transform: rotate(-90deg);
+	}
+	.h1-mywork {
+		font-family: "Prata";
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 100px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	.menu-align {
+		position: relative;
+		align-items: flex-end;
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 10px;
+		flex-wrap: wrap;
+	}
+	.work-video {
+		width: 100% !important;
+	}
+	.videocentered {
+		position: absolute;
+		height: 100%;
+		width: 400px;
+		/* left: 400px;
+		top: 250px; */
+		top: 100%;
+		left: 47%;
+		transform: translate(-50%, -50%);
+	}
+	.contact-p {
+		font-family: "Prata";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 123.8%;
+		width: 137px;
+		/* or 37px */
+
+		letter-spacing: 0.005em;
+
+		color: #ffffff;
+	}
+	.contact-add {
+		position: absolute;
+		width: 276px;
+		height: 75px;
+		left: 10%;
+		top: 68%;
+
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 171.19%;
+		/* or 27px */
+
+		letter-spacing: 0.09em;
+		text-align: initial;
+
+		color: #ffff;
+	}
+	.contact-social {
+		position: absolute;
+		text-align: initial;
+		width: 155px;
+		height: 17px;
+		left: 10%;
+		top: 88%;
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 140.69%;
+		letter-spacing: 0.09em;
+		color: #ffffff;
+	}
+
+	span {
+		position: absolute;
+		width: 262px;
+		height: 59px;
+		left: 0px;
+		top: 80%;
+
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		line-height: 181.5%;
+		/* or 34px */
+
+		letter-spacing: 0.18em;
+
+		color: #e1e1e1;
+	}
+	.intro-inner {
+		position: absolute;
+		width: 148px;
+		height: 56px;
+		left: 9%;
+		top: 10%;
+		padding-top: 30px !important;
+		border-radius: 0px;
+		color: #fff;
+	}
+	.intro-inner1 {
+		position: absolute;
+		width: 148px;
+		height: 56px;
+		left: 10%;
+		top: 276px;
+		padding-top: 30px !important;
+		border-radius: 0px;
+		color: #fff;
+	}
+	.intro-inner2 {
+		position: absolute;
+		width: 148px;
+		height: 56px;
+		left: 10%;
+		top: 83%;
+		padding-top: 30px !important;
+		border-radius: 0px;
+		color: #fff;
+	}
+	.gradient-shift {
+		display: none !important;
+	}
+	.menu-contact {
+		display: none !important;
+	}
+}

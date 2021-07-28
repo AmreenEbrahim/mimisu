@@ -25,7 +25,7 @@ const JurrasicWorldImages = () => {
 	];
 	// const home = ../img/shootfighters/home.png";
 	return (
-		<Grid Row="3" centered width="100%">
+		<Grid Row="3" centered width="100%" stackable>
 			{images.map(image => (
 				<Grid.Row>
 					{image.desc ? (
@@ -37,10 +37,10 @@ const JurrasicWorldImages = () => {
 									</Grid.Column>
 									<Grid.Column
 										textAlign="left"
-										width={3}
+										width={4}
 										verticalAlign="middle"
 									>
-										<Grid.Row className="img-desc" verticalAlign="middle">
+										<Grid.Row className="img-desc wat" verticalAlign="middle">
 											{image.desc}{" "}
 										</Grid.Row>
 										{/* <Grid.Row>UI design UX </Grid.Row>

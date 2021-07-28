@@ -17,7 +17,12 @@ const MimisuImages = () => {
 					</Container>
 				</Grid.Column>
 
-				<Grid.Column width={6} verticalAlign="middle" textAlign="left">
+				<Grid.Column
+					className="img-padding"
+					width={6}
+					verticalAlign="middle"
+					textAlign="left"
+				>
 					<Container>
 						<Image src="../../img/mimisu/dress.png" size="large" />
 					</Container>
@@ -31,7 +36,12 @@ const MimisuImages = () => {
 					</Container>
 				</Grid.Column>
 				{/* <WhatIDid align="top" textAlign="right" /> */}
-				<Grid.Column Row="4" textAlign="center" verticalAlign="top">
+				<Grid.Column
+					className="wat"
+					Row="4"
+					textAlign="center"
+					verticalAlign="top"
+				>
 					<Grid.Row as="h4">What i did </Grid.Row>
 					<Grid.Row className="italic-font">Photography</Grid.Row>
 					<Grid.Row className="italic-font">Fashion design</Grid.Row>
@@ -50,7 +60,12 @@ const MimisuImages = () => {
 						/>
 					</Container>
 				</Grid.Column>
-				<Grid.Column width={2} textAlign="left" verticalAlign="middle">
+				<Grid.Column
+					className="wat"
+					width={2}
+					textAlign="left"
+					verticalAlign="middle"
+				>
 					<Grid.Row as="h5">Acacia Dress </Grid.Row>
 					<Grid.Row className="italic-font">My bestseller </Grid.Row>
 				</Grid.Column>

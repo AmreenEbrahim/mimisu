@@ -23,15 +23,15 @@ const JurrasicWorldIntro = () => {
 							</Grid.Column>
 						</Grid.Row>
 					</Grid.Column>
-					<WhatIDid align="middle" textAlign="center" />
-					{/* <Grid.Column textAlign="center">
+					{/* <WhatIDid className="wat" align="middle" textAlign="center" /> */}
+					<Grid.Column textAlign="center" className="wat">
 						<Grid.Row as="div" className="jurrasic_world-right">
 							What i did{" "}
 						</Grid.Row>
 						<Grid.Row>UI design UX </Grid.Row>
 						<Grid.Row>Design</Grid.Row>
 						<Grid.Row>Visual design</Grid.Row>
-					</Grid.Column> */}
+					</Grid.Column>
 				</Grid.Row>
 			</Grid>
 		</Container>

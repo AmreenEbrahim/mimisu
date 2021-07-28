@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
@@ -16,8 +16,8 @@ import Work from "./components/work/Work";
 
 const App = () => {
 	return (
-		<Router>
-			<div>
+		<Fragment>
+			<Router>
 				<Navbar />
 				{/* <Container className="stripe" /> */}
 				<section>
@@ -31,8 +31,8 @@ const App = () => {
 						<Route exact path="/mimisu-clothing" component={MimisuClothing} />
 					</Switch>
 				</section>
-			</div>
-		</Router>
+			</Router>
+		</Fragment>
 	);
 };
 

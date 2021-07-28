@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MenuModal from "../layouts/MenuModal.js";
-import { Menu, Image, Button } from "semantic-ui-react";
+import { Menu, Image, Button, Container } from "semantic-ui-react";
 
 export default class MenuExampleSecondary extends Component {
 	constructor(props) {
@@ -18,7 +18,7 @@ export default class MenuExampleSecondary extends Component {
 	render() {
 		return (
 			<div>
-				<Menu secondary fluid stackable>
+				<Menu secondary className="menu-align">
 					<Menu.Item>
 						<Link to="/">
 							<Image size="mini" src={"../../img/logo/Final_M.png"} />
@@ -45,7 +45,7 @@ export default class MenuExampleSecondary extends Component {
 							/>
 						</Menu.Menu>
 					) : (
-						<Menu.Menu position="right" compact>
+						<Menu.Menu position="right">
 							<label>
 								{/* <img src="https://react.semantic-ui.com/images/avatar/small/joe.jpg" /> */}
 								<u>Let's Talk</u>
