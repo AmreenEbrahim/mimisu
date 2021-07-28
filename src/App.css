@@ -300,6 +300,7 @@ body.dimmable > .dimmer {
 	font-family: "Prata", "Poppins", serif;
 }
 .figure-caption {
+	padding-top: 12px;
 	font-family: "Prata";
 	font-size: 17px;
 	font-style: normal;

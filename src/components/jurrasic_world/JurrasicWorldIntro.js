@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Container } from "semantic-ui-react";
-import WhatIDid from "../layouts/WhatIDid";
+// import WhatIDid from "../layouts/WhatIDid";
 
 const JurrasicWorldIntro = () => {
 	return (

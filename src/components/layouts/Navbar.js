@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MenuModal from "../layouts/MenuModal.js";
-import { Menu, Image, Button, Container } from "semantic-ui-react";
+import { Menu, Image, Button } from "semantic-ui-react";
 
 export default class MenuExampleSecondary extends Component {
 	constructor(props) {
