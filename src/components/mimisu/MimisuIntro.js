@@ -3,7 +3,7 @@ import { Grid } from "semantic-ui-react";
 
 const MimisuIntro = () => {
 	return (
-		<Grid divided="vertically">
+		<Grid divided="vertically" className="grid-margin">
 			<Grid.Row columns="2">
 				{/* <Grid.Row ></Grid.Row> */}
 				<Grid.Column floated="left">

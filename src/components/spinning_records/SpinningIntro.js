@@ -4,7 +4,7 @@ import { Grid, Container } from "semantic-ui-react";
 const SpinningIntro = () => {
 	return (
 		<Container>
-			<Grid divided="vertically">
+			<Grid divided="vertically" className="grid-margin">
 				<Grid.Row columns="2">
 					<Grid.Column floated="left">
 						<Grid.Row columns="3" width={8}>

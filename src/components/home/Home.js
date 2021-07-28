@@ -4,7 +4,8 @@ import WhyUs from "./WhyUs";
 import Work from "./Work";
 import HomeGradient from "./HomeGradient";
 
-const Home = () => {
+const Home = props => {
+	console.log("router name", props.match.path);
 	return (
 		<Fragment>
 			<HomeGradient />

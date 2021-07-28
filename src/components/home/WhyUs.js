@@ -21,7 +21,7 @@ const WhyUs = () => {
 						</Grid.Row>
 						<Grid.Row>
 							<Grid>
-								<Grid.Column width={6}>
+								<Grid.Column className="whyus-mob" width={6}>
 									<Grid.Row className="whyus">
 										<Label basic>Visual design</Label>
 									</Grid.Row>

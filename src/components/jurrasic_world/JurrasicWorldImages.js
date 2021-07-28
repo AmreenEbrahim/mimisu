@@ -5,9 +5,9 @@ const JurrasicWorldImages = () => {
 	const images = [
 		{
 			name: "image1",
-
-			src: "../../img/JurassicWorld/about.jpg"
+			src: "../../img/JurassicWorld/productdetail.png"
 		},
+
 		{
 			name: "image1",
 			src: "../../img/JurassicWorld/Contains.png",
@@ -20,7 +20,8 @@ const JurrasicWorldImages = () => {
 		},
 		{
 			name: "image1",
-			src: "../../img/JurassicWorld/productdetail.png"
+
+			src: "../../img/JurassicWorld/about.jpg"
 		}
 	];
 	// const home = ../img/shootfighters/home.png";

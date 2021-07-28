@@ -18,7 +18,7 @@ const responsive = {
 	mobile: {
 		breakpoint: { max: 464, min: 0 },
 		items: 1,
-		partialVisibilityGutter: 90
+		partialVisibilityGutter: 50
 	}
 };
 const images = [
@@ -45,7 +45,7 @@ const images = [
 ];
 const Work = props => (
 	<Container>
-		<Grid verticalAlign="middle">
+		<Grid verticalAlign="middle" stackable>
 			<Grid.Row columns={2}>
 				<Grid.Row columns={2} width={5}>
 					<Grid.Column className="h1-mywork">My Work</Grid.Column>

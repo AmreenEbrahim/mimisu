@@ -27,15 +27,45 @@ class MyModal extends React.Component {
 					<Navbar menu={true} />
 				</Modal.Content>
 				<Modal.Content>
+					{/* <Navbar menu={true} /> */}
+
+					<div className="web-hidden videocontainer contact-video">
+						<video autoPlay loop muted>
+							<source src="../../img/home/menu.mp4" type="video/mp4" />
+						</video>
+						<Header>
+							<label className="menu-page">menu</label>
+						</Header>
+						<p className="menu-mobile">
+							<h6 className="text-mob">01</h6>
+							<Link to="/" className="text-mob">
+								Home
+							</Link>
+						</p>
+						<p className="menu-mobile1">
+							<h6 className="text-mob">02</h6>
+							<Link to="/" className="text-mob">
+								Work
+							</Link>
+						</p>
+						<p className="menu-mobile2">
+							<h6 className="text-mob">03</h6>
+							<Link to="/" className="text-mob">
+								Contact
+							</Link>
+						</p>
+					</div>
+				</Modal.Content>
+				<Modal.Content>
 					<Header>
 						<label className="menu-page">menu</label>
 					</Header>
 				</Modal.Content>
 
-				<Modal.Content>
+				<Modal.Content className="web-show">
 					<Grid stackable>
-						<Grid.Row columns="4">
-							<Grid.Column width={3} className="menu-padding menu-container">
+						<Grid.Row columns="4" centered className="menu-mob">
+							<Grid.Column width={2} className="menu-padding ">
 								<Header as="h1" onClick={this.props.handleClose}>
 									<Link to="/" className="link">
 										Home
@@ -52,7 +82,7 @@ class MyModal extends React.Component {
 									</Link>
 								</Header>
 							</Grid.Column>
-							<Grid.Column className="gradient-shift">
+							<Grid.Column width={6} className="gradient-shift">
 								<video
 									width="auto"
 									className="menu-eclipse"
@@ -68,18 +98,18 @@ class MyModal extends React.Component {
 							<Grid.Column
 								textAlign="left"
 								verticalAlign="middle"
-								floated="right"
+								floated="left"
 							>
 								<Header as="h3" className="menu-contact">
 									Contact
 								</Header>
-								<Header as="h6" color="red" className="menu-sendme">
+								<Header as="h6" color="red" className="menu-sendme ">
 									<u>Send me an e-mail</u>
 								</Header>
-								<Header as="h6" color="red" className="menu-sendme">
+								<Header as="h6" color="red" className="menu-sendme ">
 									<u>+1234 56432 2</u>
 								</Header>
-								<Header as="h6" color="red" className="menu-sendme">
+								<Header as="h6" color="red" className="menu-sendme ">
 									social links
 								</Header>
 							</Grid.Column>

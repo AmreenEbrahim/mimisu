@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Grid, Image } from "semantic-ui-react";
 
 const HomeGradient = () => {
@@ -42,7 +43,18 @@ const HomeGradient = () => {
 								</p>
 							</Grid.Row>
 						</Grid.Row>
-						<p className="intro-inner2">LinkedIn / Instagram</p>
+						<p className="intro-inner2">
+							<Link
+								color="white"
+								to="https://www.linkedin.com/in/naomi-solis-36218ab2/"
+							>
+								LinkedIn
+							</Link>{" "}
+							/{" "}
+							<Link to="https://www.instagram.com/naomisoliss__/d">
+								Instagram
+							</Link>
+						</p>
 					</Grid.Column>
 				</Grid>
 			</div>

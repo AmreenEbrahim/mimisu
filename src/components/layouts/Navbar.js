@@ -14,16 +14,20 @@ export default class MenuExampleSecondary extends Component {
 	}
 
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-
 	render() {
+		console.log("path", window.location.pathname);
 		return (
 			<div>
-				<Menu secondary className="menu-align">
-					<Menu.Item>
-						<Link to="/">
-							<Image size="mini" src={"../../img/logo/Final_M.png"} />
-						</Link>
-					</Menu.Item>
+				<Menu fixed="top" secondary className="menu-align">
+					{window.location.pathname === "/" ? (
+						<div />
+					) : (
+						<Menu.Item>
+							<Link to="/">
+								<Image size="mini" src={"../../img/logo/Final_M.png"} />
+							</Link>
+						</Menu.Item>
+					)}
 
 					{!this.props.menu ? (
 						<Menu.Menu position="right">

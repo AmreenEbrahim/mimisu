@@ -91,7 +91,7 @@ span {
 	width: 433px;
 	height: 59px;
 	left: 7%;
-	top: 85%;
+	top: 60%;
 
 	font-family: "Poppins";
 	font-style: normal;
@@ -109,7 +109,7 @@ span {
 	width: 322px;
 	height: 75px;
 	left: 10%;
-	top: 75%;
+	top: 70%;
 
 	font-family: "Poppins";
 	font-style: normal;
@@ -129,7 +129,7 @@ span {
 	width: 155px;
 	height: 17px;
 	left: 10%;
-	top: 100%;
+	top: 80%;
 
 	font-family: "Roboto";
 	font-style: normal;
@@ -146,8 +146,8 @@ span {
 	text-align: initial;
 	width: 459px;
 	height: 188px;
-	left: 11%;
-	top: 40%;
+	left: 9%;
+	top: 32%;
 
 	font-family: "Prata";
 	font-style: normal;
@@ -374,7 +374,7 @@ body.dimmable > .dimmer {
 }
 
 .ui.container {
-	margin-top: 3% !important;
+	margin-top: 8% !important;
 }
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
@@ -709,11 +709,11 @@ h2 {
 	width: 18px !important;
 }
 .menu-contact {
-	font-family: "Poppins";
-	font-size: 24px;
+	font-family: "Poppins" !important;
+	font-size: 24px !important;
 	font-style: normal;
-	font-weight: 400;
-	line-height: 42px;
+	font-weight: 400 !important;
+	line-height: 42px !important;
 	letter-spacing: 0.115em;
 	text-align: left;
 }
@@ -738,10 +738,10 @@ h2 {
 	width: 70px;
 	height: 120px;
 
-	font-family: "Montserrat";
+	font-family: "Poppins";
 	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
+
+	font-size: 12px;
 	line-height: 119px;
 	/* identical to box height, or 664% */
 
@@ -848,6 +848,10 @@ h2 {
 	grid-template-columns: repeat(auto-fill, minmax(500px, 8fr));
 	grid-gap: 1em;
 }
+.web-hidden {
+	display: none !important;
+}
+
 @media (max-width: 360px) {
 	div {
 		overflow: hidden;
@@ -902,14 +906,17 @@ h2 {
 		display: none !important;
 	}
 	.menu-container {
-		justify-content: start;
-		padding: 0 0 0 79px !important;
+		display: flex;
+		padding-top: 92px;
+		margin-left: 55px;
 	}
 	.menu-contact {
 		display: none;
 	}
 	.menu-page {
 		font-size: 10px;
+		top: 17%;
+		left: 11%;
 		position: absolute;
 		width: 39px;
 		height: -1px;
@@ -920,7 +927,7 @@ h2 {
 		line-height: 83px;
 		letter-spacing: 0.205em;
 		text-transform: uppercase;
-		color: #000000;
+		color: #fff;
 		transform: rotate(-90deg);
 	}
 	.h1-mywork {
@@ -949,7 +956,7 @@ h2 {
 		width: 400px;
 		/* left: 400px;
 		top: 250px; */
-		top: 100%;
+		top: 77%;
 		left: 47%;
 		transform: translate(-50%, -50%);
 	}
@@ -970,7 +977,7 @@ h2 {
 		position: absolute;
 		width: 276px;
 		height: 75px;
-		left: 10%;
+		left: 11%;
 		top: 68%;
 
 		font-family: "Poppins";
@@ -1053,6 +1060,97 @@ h2 {
 		display: none !important;
 	}
 	.menu-contact {
+		display: none !important;
+	}
+	.whyus-mob {
+		padding-bottom: 25px !important;
+	}
+	.ui.container {
+		margin-top: 25% !important;
+	}
+	.work-mar {
+		margin-top: 9em;
+		margin-right: 2em;
+	}
+	.grid-margin {
+		margin-left: 1em !important;
+		margin-right: 3em !important;
+	}
+	.content {
+		height: initial;
+		width: 302px;
+		left: 337px;
+		top: 401px;
+		border-radius: 0px;
+		color: black;
+
+		/* background: rgba(0, 0, 0, 0.5); */
+		/* color: #f1f1f1; */
+		/* width: 100%; */
+		padding: 20px !important;
+	}
+	.menu-sendme {
+		display: none;
+	}
+	.menu-mob {
+		padding-left: 40% !important;
+		padding-top: 50% !important;
+	}
+	.menu-mobile {
+		position: absolute;
+		text-align: initial;
+		width: 459px;
+		height: 188px;
+		left: 21%;
+		top: 20%;
+		font-family: "Prata";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 146.3%;
+		letter-spacing: 0.005em;
+		color: #ffffff;
+	}
+	.menu-mobile1 {
+		position: absolute;
+		text-align: initial;
+		width: 459px;
+		height: 188px;
+		left: 21%;
+		top: 25%;
+		font-family: "Prata";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 146.3%;
+		letter-spacing: 0.005em;
+		color: #ffffff;
+	}
+	.menu-mobile2 {
+		position: absolute;
+		text-align: initial;
+		width: 459px;
+		height: 188px;
+		left: 21%;
+		top: 30%;
+		font-family: "Prata";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 146.3%;
+		letter-spacing: 0.005em;
+		color: #ffffff !important;
+	}
+	.text-mob {
+		color: #ffffff !important;
+		margin-bottom: 4px;
+	}
+	.web-hidden {
+		width: 100%;
+		height: 100%;
+		display: grid !important;
+	}
+	.web-show {
 		display: none !important;
 	}
 }
