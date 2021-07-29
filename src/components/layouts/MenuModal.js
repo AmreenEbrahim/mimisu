@@ -26,48 +26,7 @@ class MyModal extends React.Component {
 				<Modal.Content>
 					<Navbar menu={true} />
 				</Modal.Content>
-				<Modal.Content>
-					{/* <Navbar menu={true} /> */}
 
-					<div className="web-hidden videocontainer contact-video">
-						<video autoPlay loop muted>
-							<source src="../../img/home/menu.mp4" type="video/mp4" />
-						</video>
-						<Header>
-							<label className="menu-page">menu</label>
-						</Header>
-						<p className="supnumhome">
-							<h6 className="text-mob">
-								<sup>01</sup>
-							</h6>
-						</p>
-						<p className="menu-mobile">
-							<Link to="/" className="text-mob">
-								Home
-							</Link>
-						</p>
-						<p className="supnumwork">
-							<h6 className="text-mob">
-								<sup>02</sup>
-							</h6>
-						</p>
-						<p className="menu-mobile1">
-							<Link to="/work" className="text-mob">
-								Work
-							</Link>
-						</p>
-						<p className="supnumcontact">
-							<h6 className="text-mob">
-								<sup>03</sup>
-							</h6>
-						</p>
-						<p className="menu-mobile2">
-							<Link to="/contact" className="text-mob">
-								Contact
-							</Link>
-						</p>
-					</div>
-				</Modal.Content>
 				<Modal.Content>
 					<Header>
 						<label className="menu-page">menu</label>
@@ -127,6 +86,48 @@ class MyModal extends React.Component {
 							</Grid.Column>
 						</Grid.Row>
 					</Grid>
+				</Modal.Content>
+				<Modal.Content>
+					{/* <Navbar menu={true} /> */}
+
+					<div className="web-hidden videocontainer contact-video">
+						<video autoPlay loop muted>
+							<source src="../../img/home/menu.mp4" type="video/mp4" />
+						</video>
+						<Header>
+							<label className="menu-page">menu</label>
+						</Header>
+						<p className="supnumhome">
+							<h6 className="text-mob">
+								<sup>01</sup>
+							</h6>
+						</p>
+						<p className="menu-mobile">
+							<Link to="/" className="text-mob">
+								Home
+							</Link>
+						</p>
+						<p className="supnumwork">
+							<h6 className="text-mob">
+								<sup>02</sup>
+							</h6>
+						</p>
+						<p className="menu-mobile1">
+							<Link to="/work" className="text-mob">
+								Work
+							</Link>
+						</p>
+						<p className="supnumcontact">
+							<h6 className="text-mob">
+								<sup>03</sup>
+							</h6>
+						</p>
+						<p className="menu-mobile2">
+							<Link to="/contact" className="text-mob">
+								Contact
+							</Link>
+						</p>
+					</div>
 				</Modal.Content>
 			</Modal>
 		);
