@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 class MyModal extends React.Component {
 	confirmClick = (event, data) => {
-		console.log("Passed in Prop Value: " + this.props.valueIntoModal);
+		// console.log("Passed in Prop Value: " + this.props.valueIntoModal);
 		this.props.handleClose();
 	};
 
@@ -36,21 +36,33 @@ class MyModal extends React.Component {
 						<Header>
 							<label className="menu-page">menu</label>
 						</Header>
+						<p className="supnumhome">
+							<h6 className="text-mob">
+								<sup>01</sup>
+							</h6>
+						</p>
 						<p className="menu-mobile">
-							<h6 className="text-mob">01</h6>
 							<Link to="/" className="text-mob">
 								Home
 							</Link>
 						</p>
+						<p className="supnumwork">
+							<h6 className="text-mob">
+								<sup>02</sup>
+							</h6>
+						</p>
 						<p className="menu-mobile1">
-							<h6 className="text-mob">02</h6>
-							<Link to="/" className="text-mob">
+							<Link to="/work" className="text-mob">
 								Work
 							</Link>
 						</p>
+						<p className="supnumcontact">
+							<h6 className="text-mob">
+								<sup>03</sup>
+							</h6>
+						</p>
 						<p className="menu-mobile2">
-							<h6 className="text-mob">03</h6>
-							<Link to="/" className="text-mob">
+							<Link to="/contact" className="text-mob">
 								Contact
 							</Link>
 						</p>

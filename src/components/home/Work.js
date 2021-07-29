@@ -30,12 +30,12 @@ const images = [
 	{
 		name: "image2",
 		src: "../../img/home/slider/axis.png",
-		href: "/jurrasic-world"
+		href: "/"
 	},
 	{
 		name: "image3",
 		src: "../../img/home/slider/guilder.png",
-		href: "/jurrasic-world"
+		href: "/"
 	},
 	{
 		name: "image4",

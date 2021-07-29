@@ -15,7 +15,7 @@ export default class MenuExampleSecondary extends Component {
 
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 	render() {
-		console.log("path", window.location.pathname);
+		// console.log("path", this.props.match);
 		return (
 			<div>
 				<Menu fixed="top" secondary className="menu-align">

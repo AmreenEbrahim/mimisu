@@ -851,8 +851,7 @@ h2 {
 .web-hidden {
 	display: none !important;
 }
-
-@media (max-width: 360px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 	div {
 		overflow: hidden;
 		word-wrap: break-word;
@@ -1101,7 +1100,7 @@ h2 {
 		text-align: initial;
 		width: 459px;
 		height: 188px;
-		left: 21%;
+		left: 25%;
 		top: 20%;
 		font-family: "Prata";
 		font-style: normal;
@@ -1111,12 +1110,21 @@ h2 {
 		letter-spacing: 0.005em;
 		color: #ffffff;
 	}
+	.supnumhome {
+		position: absolute;
+		text-align: initial;
+		width: 459px;
+		height: 188px;
+		left: 18%;
+		top: 20%;
+		color: #ffffff !important;
+	}
 	.menu-mobile1 {
 		position: absolute;
 		text-align: initial;
 		width: 459px;
 		height: 188px;
-		left: 21%;
+		left: 27%;
 		top: 25%;
 		font-family: "Prata";
 		font-style: normal;
@@ -1131,7 +1139,7 @@ h2 {
 		text-align: initial;
 		width: 459px;
 		height: 188px;
-		left: 21%;
+		left: 26%;
 		top: 30%;
 		font-family: "Prata";
 		font-style: normal;
@@ -1141,9 +1149,27 @@ h2 {
 		letter-spacing: 0.005em;
 		color: #ffffff !important;
 	}
+	.supnumcontact {
+		position: absolute;
+		text-align: initial;
+		width: 459px;
+		height: 188px;
+		left: 18%;
+		top: 30%;
+	}
+
+	.supnumwork {
+		position: absolute;
+		text-align: initial;
+		width: 459px;
+		height: 188px;
+		left: 18%;
+		top: 25%;
+		color: #ffffff !important;
+	}
 	.text-mob {
 		color: #ffffff !important;
-		margin-bottom: 4px;
+		margin-bottom: 3px;
 	}
 	.web-hidden {
 		width: 100%;
