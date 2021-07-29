@@ -851,6 +851,9 @@ h2 {
 .web-hidden {
 	display: none !important;
 }
+.sociallogo {
+	padding-right: 12px;
+}
 @media only screen and (min-width: 320px) and (max-width: 768px) /* @media only screen and (min-width: 320px) and (max-width: 6px) */ {
 	div {
 		overflow: hidden;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Header, Grid } from "semantic-ui-react";
+import { Modal, Header, Grid, Image } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
@@ -81,7 +81,18 @@ class MyModal extends React.Component {
 									<u>+1234 56432 2</u>
 								</Header>
 								<Header as="h6" color="red" className="menu-sendme ">
-									social links
+									<Image
+										className="sociallogo"
+										href={"https://www.instagram.com/naomisoliss__/d"}
+										src={"../../img/logo/instagram.png"}
+										size="tiny"
+									/>
+									<Image
+										className="sociallogo"
+										href={"https://www.linkedin.com/in/naomi-solis-36218ab2/"}
+										src={"../../img/logo/linkedin.png"}
+										size="tiny"
+									/>
 								</Header>
 							</Grid.Column>
 						</Grid.Row>
